@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #f1f8f6;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: 700;
+    color: #2b7a78;
+}
+
+ul {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+}
+
+.header button {
+    position: absolute;
+    right: 18%;
+    margin-top: -36px;
+}
+
+.header i {
+    font-size: 22px;
+}
+
+.to-do {
+    margin-top: 40px;
+    width: 60%;
+}
+
+.textInsert {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    width: 90%;
+    font-size: 1rem;
+    color: #2b7a78;
+}
+
+.divInsert {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #d1e8e4;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 6px 5px 10px 0.2px #696969;
+}
+
+button {
+    width: 10%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.bx-plus {
+    font-size: 30px;
+    margin-left: 10px;
+    background-color: #2b7a78;
+    border-radius: 5px;
+    padding: 5px;
+    color: #ffffff;
+}
+
+.divLi {
+    padding: 10px;
+    background: #d1e8e4;
+    display: flex;
+    align-items: center;
+}
+
+.divLi span {
+    width: 70%;
+    color: #2b7a78;
+}
+
+.divLi .timestamp {
+    width: 20%;
+    font-size: 0.8rem;
+    color: #696969;
+}
+
+.divLi input {
+    width: 10%;
+    outline: none;
+    accent-color: currentcolor;
+    cursor: pointer;
+}
+
+.divLi i {
+    font-size: 22px;
+    color: #da3333;
+}
+
+li {
+    list-style-type: none;
+    border-bottom: #2b7a78 solid 8px;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+@media (max-width: 775px) {
+    input {
+        width: 70%;
+    }
+
+    .divInsert button {
+        width: 30%;
+    }
+
+    i {
+        font-size: 30px;
+        padding: 0px;
+    }
+
+    p {
+        font-size: x-large;
+    }
+}
+
+.bx-trash {
+    font-size: 30px !important;
+    color: #2b7a78 !important;
+}
+
+.bx-trash:hover {
+    color: #da3333 !important;
+}
+
+.bxs-trash-alt {
+    font-size: 30px !important;
+    border-radius: 30%;
+    color: #2b7a78;
+}
+
+.bxs-trash-alt:hover {
+    color: #da3333;
+}
+
+.bxs-trash-alt::before {
+    transition: 0.3s;
+}
+
+i.bx-plus:hover {
+    background-color: white;
+    color: #2b7a78;
+    transition: 0.2s;
+}
+
+i::before {
+    transition: 0.3s;
+}
+
+.checkbox {
+    height: 20px;
+    border-radius: 30%;
+    color: rgb(52, 180, 52);
+    background-color: #d1e8e4;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
